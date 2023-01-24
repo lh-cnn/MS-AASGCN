@@ -1,15 +1,11 @@
 # MS-AASGCN
-## CenterNet3D: An Anchor free Object Detector for Autonomous Driving (Arxiv 2020) [\[paper\]](https://arxiv.org/abs/2007.07214)
-Based on the center point, we propose an anchor-free CenterNet3D Network that performs 3D object detection without anchors. 
-Our CenterNet3D uses keypoint estimation to find center points and directly regresses 3D bounding boxes. 
-Besides, our CenterNet3D is Non-Maximum Suppression free which makes it more efficient and simpler. On the KITTI benchmark, 
-our proposed CenterNet3D achieves competitive performance with other one stage anchor-based methods.
+## MS-AASGCN [\[paper\]]()
 
 ## Updates
 2023-01-24: MS-AASGCN
 
 # Installation
-Our MS-AASGCN is based on [mmaction2](https://github.com/open-mmlab/mmaction2), Please install with the steps bellow for installation.
+Our MS-AASGCN is based on [PYSKL toolbox](https://github.com/kennymckormick/pyskl), Please install with the steps bellow for installation.
 ```
 conda create -n ms-aasgcn python=3.8 pytorch=1.10 cudatoolkit=11.3 torchvision -c pytorch -y
 conda activate ms-aasgcn
@@ -49,4 +45,4 @@ If you find this work useful in your research, please consider cite:
 
 ## Acknowledgement
 The code is devloped based on mmpose2.  
-* [mmaction2](https://github.com/open-mmlab/mmaction2)
+* [PYSKL toolbox](https://github.com/kennymckormick/pyskl)
