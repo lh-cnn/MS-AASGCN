@@ -24,12 +24,12 @@ pip3 install -e .
 # Train
 To train the CenterNet3D, run the following command:
 ```
-cd CenterNet3d
-python tools/train.py ./configs/centernet3d.py
+bash tools/dist_train.sh ${CONFIG_FILE} ${NUM_GPUS} [optional arguments]
+eg: bash tools/dist_train.sh configs/aasgcn/aasgcn_ntu60_xsub_3dkp/j.py 1 --validate --test-last --test-bes
 ```
 # Test
 To evaluate the model, run the following command:
 ```
-cd CenterNet3d
-python tools/test.py ./configs/centernet3d.py ./work_dirs/centernet3d/epoch_25.pth
+bash tools/dist_test.sh ${CONFIG_FILE} ${CHECKPOINT_FILE} ${NUM_GPUS} [optional arguments]
+eg: bash tools/dist_test.sh configs/aasgcn/aasgcn_ntu60_xsub_3dkp/j.py checkpoints/SOME_CHECKPOINT.pth 1 --eval top_k_accuracy --out result.pkl
 ```
