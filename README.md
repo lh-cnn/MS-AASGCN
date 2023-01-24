@@ -13,14 +13,23 @@ Our MS-AASGCN is based on [mmaction2](https://github.com/open-mmlab/mmaction2), 
 
 
 conda create -n ms-aasgcn python=3.8 pytorch=1.10 cudatoolkit=11.3 torchvision -c pytorch -y
+
 conda activate ms-aasgcn
+
 pip3 install openmim
+
 mim install mmcv-full
+
 mim install mmdet
+
 mim install mmpose
+
 git clone https://github.com/lh-cnn/MS-AASGCN.git
+
 cd ms-aasgcn
+
 pip install -r requirments
+
 pip3 install -e .
 
 # Train
