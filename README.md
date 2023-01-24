@@ -10,7 +10,7 @@ our proposed CenterNet3D achieves competitive performance with other one stage a
 
 # Installation
 Our MS-AASGCN is based on [mmaction2](https://github.com/open-mmlab/mmaction2), Please install with the steps bellow for installation.
-
+```
 conda create -n ms-aasgcn python=3.8 pytorch=1.10 cudatoolkit=11.3 torchvision -c pytorch -y
 conda activate ms-aasgcn
 pip3 install openmim
@@ -21,15 +21,14 @@ git clone https://github.com/lh-cnn/MS-AASGCN.git
 cd ms-aasgcn
 pip install -r requirments
 pip3 install -e .
-```
 
+```
 # Train
 To train the CenterNet3D, run the following command:
 ```
 cd CenterNet3d
 python tools/train.py ./configs/centernet3d.py
 ```
-
 # Test
 To evaluate the model, run the following command:
 ```
