@@ -21,6 +21,12 @@ cd ms-aasgcn
 pip install -r requirments
 pip3 install -e .
 ```
+
+## Prepare Skeleton Datasets
+
+- [x] NTURGB+D (CVPR 2016): [NTU RGB+D: A large scale dataset for 3D human activity analysis](https://openaccess.thecvf.com/content_cvpr_2016/papers/Shahroudy_NTU_RGBD_A_CVPR_2016_paper.pdf)
+- [x] NTURGB+D 120 (TPAMI 2019): [Ntu rgb+ d 120: A large-scale benchmark for 3d human activity understanding](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8713892)
+
 # Train
 To train one stream, run the following command:
 ```
