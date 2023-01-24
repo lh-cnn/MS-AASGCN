@@ -22,13 +22,13 @@ pip install -r requirments
 pip3 install -e .
 ```
 # Train
-To train the CenterNet3D, run the following command:
+To train one stream, run the following command:
 ```
 bash tools/dist_train.sh ${CONFIG_FILE} ${NUM_GPUS} [optional arguments]
 eg: bash tools/dist_train.sh configs/aasgcn/aasgcn_ntu60_xsub_3dkp/j.py 1 --validate --test-last --test-best
 ```
 # Test
-To evaluate the model, run the following command:
+To evaluate one stream, run the following command:
 ```
 bash tools/dist_test.sh ${CONFIG_FILE} ${CHECKPOINT_FILE} ${NUM_GPUS} [optional arguments]
 eg: bash tools/dist_test.sh configs/aasgcn/aasgcn_ntu60_xsub_3dkp/j.py checkpoints/SOME_CHECKPOINT.pth 1 --eval top_k_accuracy --out result.pkl
