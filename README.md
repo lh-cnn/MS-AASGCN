@@ -6,36 +6,22 @@ Besides, our CenterNet3D is Non-Maximum Suppression free which makes it more eff
 our proposed CenterNet3D achieves competitive performance with other one stage anchor-based methods.
 
 ## Updates
-2021-06-06: CenterNet3D V1.1 is released!
-
-We develop an efficient keypoint-sensitive warping operation to align the confidences to the predicted bounding boxes
-
-## Performance in KITTI validation set (50/50 split)
-```centernet3d.py```(epochs 25,batch size 2):
-
-```
-Car AP(Average Precision)@0.70, 0.70, 0.70:
-bbox AP:90.65, 89.55, 88.85
-bev  AP:89.98, 87.99, 86.98
-3d   AP:89.02, 79.11, 77.76
-aos  AP:90.63, 89.39, 88.62
-Car AP(Average Precision)@0.70, 0.50, 0.50:
-bbox AP:90.65, 89.55, 88.85
-bev  AP:90.66, 89.76, 89.28
-3d   AP:90.66, 89.72, 89.20
-aos  AP:90.63, 89.39, 88.62
-```
-
-## Demo
-[![Demo](https://github.com/wangguojun2018/CenterNet3d/blob/master/demo/example1.png)](https://www.bilibili.com/video/BV1W541147gH/)
-
-# Introduction
-![model](https://github.com/wangguojun2018/CenterNet3d/blob/master/demo/Outline_of_CenterNet3D.png)  
-Accurate and fast 3D object detection from point clouds is a key task in autonomous driving. Existing one-stage 3D object detection methods can achieve real-time performance, however, they are dominated by anchor-based detectors which are inefficient and require additional post-processing. In this paper, we eliminate anchors and model an object as a single point the center point of its bounding box. Based on the center point, we propose an anchor-free CenterNet3D Network that performs 3D object detection without anchors. Our CenterNet3D uses keypoint estimation to find center points and directly regresses 3D bounding boxes. However, because inherent sparsity of point clouds, 3D object center points are likely to be in empty space which makes it difficult to estimate accurate boundary. To solve this issue, we propose an auxiliary corner attention module to enforce the CNN backbone to pay more attention to object boundaries which is effective to obtain more accurate bounding boxes. Besides, our CenterNet3D is Non-Maximum Suppression free which makes it more efficient and simpler. On the KITTI benchmark, our proposed CenterNet3D achieves competitive performance with other one stage anchor-based methods which show the efficacy of our proposed center point representation.  
+2023-01-24: MS-AASGCN
 
 # Installation
-1. Clone this repository.
-2. Our CenterNet3D is based on [mmdetection3d](https://github.com/open-mmlab/mmdetection3d), Please check [INSTALL.md](https://github.com/wangguojun2018/CenterNet3d/blob/master/docs/install.md) for installation instructions.
+Our MS-AASGCN is based on [mmaction2](https://github.com/open-mmlab/mmaction2), Please install with the steps bellow for installation.
+
+
+conda create -n ms-aasgcn python=3.8 pytorch=1.10 cudatoolkit=11.3 torchvision -c pytorch -y
+conda activate ms-aasgcn
+pip3 install openmim
+mim install mmcv-full
+mim install mmdet
+mim install mmpose
+git clone https://github.com/lh-cnn/MS-AASGCN.git
+cd ms-aasgcn
+pip install -r requirments
+pip3 install -e .
 
 # Train
 To train the CenterNet3D, run the following command:
@@ -44,7 +30,7 @@ cd CenterNet3d
 python tools/train.py ./configs/centernet3d.py
 ```
 
-# Eval
+# Test
 To evaluate the model, run the following command:
 ```
 cd CenterNet3d
