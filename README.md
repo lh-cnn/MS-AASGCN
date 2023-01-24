@@ -27,6 +27,7 @@ pip3 install -e .
 - [x] NTURGB+D (CVPR 2016): [NTU RGB+D: A large scale dataset for 3D human activity analysis](https://openaccess.thecvf.com/content_cvpr_2016/papers/Shahroudy_NTU_RGBD_A_CVPR_2016_paper.pdf)
 - [x] NTURGB+D [2D Skeleton]: https://download.openmmlab.com/mmaction/pyskl/data/nturgbd/ntu60_hrnet.pkl
 - [x] NTURGB+D [3D Skeleton]: https://download.openmmlab.com/mmaction/pyskl/data/nturgbd/ntu60_3danno.pkl
+  
   Download the raw skeleton files and RGB videos from the [official NTURGB+D](https://github.com/shahroudy/NTURGB-D/)
 # Train
 To train one stream, run the following command:
