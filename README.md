@@ -21,7 +21,6 @@ git clone https://github.com/lh-cnn/MS-AASGCN.git
 cd ms-aasgcn
 pip install -r requirments
 pip3 install -e .
-
 ```
 # Train
 To train the CenterNet3D, run the following command:
@@ -49,9 +48,5 @@ If you find this work useful in your research, please consider cite:
 ```
 
 ## Acknowledgement
-The code is devloped based on mmdetection3d and mmdetecton, some part of codes are borrowed from SECOND and PointRCNN.  
-* [mmdetection3d](https://github.com/open-mmlab/mmdetection3d) 
-* [mmdetection](https://github.com/open-mmlab/mmdetection) 
-* [mmcv](https://github.com/open-mmlab/mmcv)
-* [second.pytorch](https://github.com/traveller59/second.pytorch)
-* [PointRCNN](https://github.com/sshaoshuai/PointRCNN)
+The code is devloped based on mmpose2.  
+* [mmaction2](https://github.com/open-mmlab/mmaction2)
