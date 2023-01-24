@@ -25,7 +25,7 @@ pip3 install -e .
 To train the CenterNet3D, run the following command:
 ```
 bash tools/dist_train.sh ${CONFIG_FILE} ${NUM_GPUS} [optional arguments]
-eg: bash tools/dist_train.sh configs/aasgcn/aasgcn_ntu60_xsub_3dkp/j.py 1 --validate --test-last --test-bes
+eg: bash tools/dist_train.sh configs/aasgcn/aasgcn_ntu60_xsub_3dkp/j.py 1 --validate --test-last --test-best
 ```
 # Test
 To evaluate the model, run the following command:
