@@ -21,7 +21,7 @@ git clone https://github.com/lh-cnn/MS-AASGCN.git
 cd ms-aasgcn
 pip install -r requirments
 pip3 install -e .
-
+```
 # Train
 To train the CenterNet3D, run the following command:
 ```
