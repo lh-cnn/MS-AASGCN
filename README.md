@@ -30,9 +30,9 @@ pip3 install -e .
   
   Download the raw skeleton files and RGB videos from the [official NTURGB+D](https://github.com/shahroudy/NTURGB-D/)
   
-  
-   Your directory tree should look like this:
 ```
+Your directory tree should look like this:
+
 ${MS-AASGCN_ROOT}
 |-- data
 `-- |-- mpii
