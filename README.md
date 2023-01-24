@@ -29,6 +29,19 @@ pip3 install -e .
 - [x] NTURGB+D [3D Skeleton]: https://download.openmmlab.com/mmaction/pyskl/data/nturgbd/ntu60_3danno.pkl
   
   Download the raw skeleton files and RGB videos from the [official NTURGB+D](https://github.com/shahroudy/NTURGB-D/)
+  
+  
+   Your directory tree should look like this:
+
+   ```
+   ${MS-AASGCN_ROOT}
+   ├── data
+   ├── configs
+   ├── pyskl
+   ├── work_dirs
+   ├── tools 
+   ├── README.md
+   └── requirements.txt
 # Train
 To train one stream, run the following command:
 ```
