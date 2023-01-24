@@ -33,19 +33,3 @@ To evaluate the model, run the following command:
 cd CenterNet3d
 python tools/test.py ./configs/centernet3d.py ./work_dirs/centernet3d/epoch_25.pth
 ```
-## Citation
-If you find this work useful in your research, please consider cite:
-```
-@misc{wang2020centernet3dan,
-    title={CenterNet3D:An Anchor free Object Detector for Autonomous Driving},
-    author={Guojun Wang and Bin Tian and Yunfeng Ai and Tong Xu and Long Chen and Dongpu Cao},
-    year={2020},
-    eprint={2007.07214},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
-}
-```
-
-## Acknowledgement
-The code is devloped based on mmpose2.  
-* [PYSKL toolbox](https://github.com/kennymckormick/pyskl)
