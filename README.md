@@ -34,7 +34,11 @@ pip3 install -e .
 Your directory tree should look like this:
 
 ${MS-AASGCN_ROOT}
-|-- data
+|-- configs
+|-- pyskl
+|-- tools
+|-- README.md
+|-- requirements
 `-- |-- nturgbd
     `-- |-- ntu60_3danno.pkl
     `-- |-- ntu60_hrnet.pkl
