@@ -39,6 +39,7 @@ ${MS-AASGCN_ROOT}
 |-- tools
 |-- README.md
 |-- requirements
+|-- data
 `-- |-- nturgbd
     `-- |-- ntu60_3danno.pkl
     `-- |-- ntu60_hrnet.pkl
