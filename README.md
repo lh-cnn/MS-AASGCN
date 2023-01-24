@@ -35,10 +35,9 @@ Your directory tree should look like this:
 
 ${MS-AASGCN_ROOT}
 |-- data
-`-- |-- mpii
-    `-- |-- nturgbd
-        |   |-- ntu60_3danno.pkl
-        |   |-- ntu60_hrnet.pkl
+`-- |-- nturgbd
+    `-- |-- ntu60_3danno.pkl
+    `-- |-- ntu60_hrnet.pkl
  ```
 # Train
 To train one stream, run the following command:
